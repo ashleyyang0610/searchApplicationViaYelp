@@ -14,6 +14,14 @@ const EachStar = ({ percentage }) => {
     </section>);
 };
 
+EachStar.defaultProps = {
+    percentage: undefined
+};
+
+EachStar.propTypes = {
+    percentage: PropTypes.node
+};
+
 class Score extends PureComponent {
     renderIntScore = (times) => {
         let currentTimes = 0;

@@ -1,13 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './notification.scss';
 
-const Notification = ({ ...props }) => {
+const Notification = ({ text }) => {
     return (<section
         className="notification"
     >
         <i className="fas fa-times-circle fa-fw" />
-        {props.text}
+        {text}
     </section>);
+};
+
+Notification.defaultProps = {
+    text: ''
+};
+
+Notification.propTypes = {
+    text: PropTypes.node
 };
 
 export default Notification;
