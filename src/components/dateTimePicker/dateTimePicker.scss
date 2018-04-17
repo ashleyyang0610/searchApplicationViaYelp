@@ -1,0 +1,26 @@
+@import '~utils/style-template.scss';
+@import '~react-dateTime/css/react-dateTime.css';
+
+.dateTimePicker {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    .rdt {
+        position: absolute;
+        width: 100%;
+    }
+    .rdtPicker {
+        position: relative;
+        width: inherit;
+        margin-top: 0px;
+        font-size: 12px;
+        background-color: $color-white;
+        border: 1px solid #ccc;
+        td.rdtToday {
+            &:before {
+                bottom: 2px;
+                right: 2px;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.star-container {
+    position: relative;
+    display: inline-block;
+}
+.star-under {
+    color: #ddd;
+    vertical-align: top;
+}
+.star-over {
+    color: #f80;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
